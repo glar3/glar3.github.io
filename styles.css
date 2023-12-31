@@ -169,7 +169,7 @@ span {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 80px;
   padding-top: 80px;
-  margin: 0 20px;
+  margin: 0 80px;
 }
 
 .portfolio .projects img {
@@ -179,6 +179,10 @@ span {
 
 .portfolio .projects h2 {
   margin-left: 0;
+}
+
+.portfolio .projects img:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
@@ -291,9 +295,9 @@ span {
     align-items: left;
     gap: 20px;
 
-    padding: 50px 0 0 0;
+    padding: 50px 0;
     background-color: var(--white);
-    height: calc(100vh - 100px);
+    height: 100%;
     width: 100%;
   }
 
