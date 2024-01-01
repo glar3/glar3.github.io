@@ -95,7 +95,8 @@ span {
 
 .home .info h1,
 .about h1,
-.portfolio h1 {
+.portfolio h1,
+.contact h1 {
   font-size: 60px;
 }
 
@@ -154,7 +155,6 @@ span {
 
   padding: 100px 0;
   background-color: var(--offWhite);
-  height: 100%;
   width: 100%;
 }
 
@@ -164,11 +164,10 @@ span {
 
 .portfolio .projects {
   display: grid;
-  height: 100%;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 80px;
-  padding-top: 80px;
+  padding-top: 20px;
   margin: 0 80px;
 }
 
@@ -185,11 +184,77 @@ span {
   cursor: pointer;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding: 120px 0;
+  background-color: var(--white);
+  height: 100%;
+  width: 100%;
+}
+
+.contact h1 {
+  align-self: center;
+}
+
+.contact .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 100px 0;
+  background-color: var(--offWhite);
+  border-radius: 10px;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.contact .details h2 {
+  margin-bottom: 40px;
+}
+
+.contact .details input {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--white);
+  outline: none;
+}
+
+.contact .details input::placeholder {
+  color: var(--highlight);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contact .details input:focus::placeholder {
+  opacity: 0;
+}
+
+.contact .details input[type="number"]::-webkit-inner-spin-button,
+.contact .details input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact .details button {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--offWhite);
+  background-color: var(--green);
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 720px) {
   .portfolio .projects {
     display: grid;
     height: 100%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     padding-top: 40px;
@@ -265,13 +330,15 @@ span {
   }
 
   .home .info h2,
-  .about h2 {
+  .about h2,
+  .contact h2 {
     font-size: 15px;
   }
 
   .home .info h1,
   .about h1,
-  .portfolio h1 {
+  .portfolio h1,
+  .contact h1 {
     font-size: 30px;
   }
 
@@ -314,15 +381,8 @@ span {
   }
 
   .portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
     gap: 20px;
-
-    padding: 100px 0;
-    background-color: var(--offWhite);
-    height: 100%;
-    width: 100%;
+    padding: 80px 0;
   }
 
   .portfolio h1 {
@@ -336,5 +396,22 @@ span {
 
   .portfolio .projects h2 {
     margin-left: 0;
+  }
+
+  .contact {
+    padding: 100px 0;
+  }
+
+  .contact h1 {
+    align-self: center;
+  }
+
+  .contact .details {
+    width: 300px;
+    padding: 60px 0;
+  }
+
+  .contact .details h2 {
+    margin-bottom: 25px;
   }
 }
