@@ -215,10 +215,12 @@ span {
 .portfolio .projects img {
   width: 100%;
   border-radius: 10px;
+  border: 2px solid var(--green);
+  box-shadow: 5px 5px 25px 0 grey;
 }
 
 .portfolio .projects h2 {
-  margin-left: 0;
+  margin-left: 20px;
 }
 
 .portfolio .projects img:hover {
@@ -252,6 +254,8 @@ span {
   border-radius: 10px;
   gap: 10px;
   margin-top: 50px;
+
+  border: 2px solid var(--green);
 }
 
 .contact .details h2 {
@@ -300,7 +304,7 @@ span {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     padding-top: 40px;
-    margin-left: 20px;
+    margin: 0 20px;
   }
 
   .nav {
@@ -401,17 +405,18 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     gap: 20px;
 
     padding: 50px 0;
     background-color: var(--white);
     height: 100%;
     width: 100%;
+    text-align: center;
   }
 
   .about *:not(span) {
-    margin-left: 20px;
+    margin: 0 20px;
   }
 
   .about button {
@@ -425,10 +430,11 @@ span {
   .portfolio {
     gap: 20px;
     padding: 80px 0;
+    justify-content: center;
   }
 
   .portfolio h1 {
-    margin-left: 20px;
+    margin: 0 auto;
   }
 
   .portfolio .projects img {
@@ -437,7 +443,7 @@ span {
   }
 
   .portfolio .projects h2 {
-    margin-left: 0;
+    text-align: center;
   }
 
   .contact {
