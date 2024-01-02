@@ -32,6 +32,8 @@ html {
 
   height: 100px;
   width: 100%;
+
+  z-index: 999;
 }
 
 .nav h2 {
@@ -75,6 +77,7 @@ span {
   background-color: var(--offWhite);
   height: calc(100vh - 100px);
   width: 100%;
+  z-index: 1;
 }
 
 .home .info {
@@ -122,6 +125,40 @@ span {
   background-color: var(--green);
 }
 
+.wave,
+.wave2,
+.wave3 {
+  position: relative;
+}
+
+.wave::before {
+  background: url(Images/wave.svg);
+  height: 750px;
+}
+
+.wave2::before {
+  background: url(Images/wave2.svg);
+  height: 500px;
+}
+
+.wave3::before {
+  background: url(Images/wave.svg);
+  height: 1000px;
+}
+
+.wave::before,
+.wave2::before,
+.wave3::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -133,6 +170,8 @@ span {
   background-color: var(--white);
   height: calc(100vh - 100px);
   width: 100%;
+
+  z-index: 1;
 }
 
 .about *:not(span) {
@@ -156,6 +195,8 @@ span {
   padding: 100px 0;
   background-color: var(--offWhite);
   width: 100%;
+
+  z-index: 1;
 }
 
 .portfolio h1 {
@@ -194,6 +235,7 @@ span {
   background-color: var(--white);
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
 .contact h1 {
