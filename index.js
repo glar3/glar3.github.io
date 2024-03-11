@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location = "index.html";
   });
   randomQuoteGenerator.addEventListener("click", function () {
-    window.location= "Random-Quote-Generator/index.html";
+    window.location = "Random-Quote-Generator/index.html";
   });
   BMI.addEventListener("click", function () {
     window.location = "index.html";
